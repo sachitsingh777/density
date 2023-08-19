@@ -30,7 +30,7 @@ const Page4 = () => {
 
   return (
     <Box my="40">
-      <Heading fontSize="xl">Wrong with self-improvement & how we're fixing it.</Heading>
+      <Heading fontSize="xl">Wrong with self-improvement & how we are fixing it.</Heading>
         <Heading fontSize="4xl" mt={2} color="blue.500">
         Self-improvement. Ugh.
         </Heading>
