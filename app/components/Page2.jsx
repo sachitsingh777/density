@@ -51,7 +51,8 @@ const Page2 = () => {
               🙂
             </span>
             <p>You attend a class reunion</p>
-            <p>You compare yourself with your peers' achievements, instead of making your self-judgment more independent of others.</p>
+            <p>You compare yourself with your peers&apos; achievements, instead of making your self-judgment more independent of others.</p>
+
           </Box>
           <Box className="cake-card" width="300px" bg="green.300" borderRadius="8px" padding="16px" transform="rotate(10deg)">
             <span role="img" aria-label="Smiley Face" style={{ fontSize: '48px', marginBottom: '16px', display: 'block' }}>
