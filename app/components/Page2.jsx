@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react';
+import React, { useEffect , useRef} from 'react';
 import { Flex, Box, Heading, Center } from '@chakra-ui/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -7,6 +7,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Page2 = () => {
+
+    const headingRef = useRef(null);
   useEffect(() => {
     gsap.to('.cake-card', {
       xPercent: -100,
@@ -17,11 +19,24 @@ const Page2 = () => {
         scrub: true,
       },
     });
+    gsap.from(headingRef.current, {
+        scale: 0.5,
+        opacity: 0,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: headingRef.current,
+          start: 'top center+=100',
+          toggleActions: 'play none none reverse',
+        },
+      });
   }, []);
 
   return (
-    <Flex direction="column" alignItems="center" justifyContent="center" p={4}>
-      <Heading fontSize={['3xl', '4xl', '6xl']}>Does this sound familiar...</Heading>
+    <Flex direction="column"  p={4}>
+           <Box flex="1">
+      <Heading ref={headingRef}  fontSize={['3xl', '4xl', '6xl']} textAlign="left">Does this sound familiar...</Heading>
+      </Box>
       <Center>
         <Flex m="8" gap="6">
           <Box className="cake-card" width="300px" bg="pink.300" borderRadius="8px" padding="16px">
