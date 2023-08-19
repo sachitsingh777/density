@@ -1,42 +1,44 @@
 "use client"
 import React, { useState } from 'react';
-import { Box, Text, Flex, Center, Heading } from '@chakra-ui/react';
+import { Box, Text, Flex, Center, Heading, useBreakpointValue } from '@chakra-ui/react';
 
 const Page4 = () => {
   const [selectedPoint, setSelectedPoint] = useState(0);
-
+  const textSize = useBreakpointValue({ base: 'md', sm: 'lg', md: 'xl', lg: '2xl' });
   const pointsData = [
     {
-      title: 'Step 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Its not as easy as 1-2-3',
+      description: 'The journey of change may be long but our sessions are quick We get to the point and tell you what you want to know and nothing else.',
     },
     {
-      title: 'Step 2',
-      description: 'Nullam sit amet metus vel arcu vulputate viverra.',
+      title: 'Old habits are hard to break.',
+      description: 'And bad behaviors die hard. Fortunately, we give you great, science-backed techniques to use.',
     },
     {
-      title: 'Step 3',
-      description: 'Nunc nec libero ac ipsum ullamcorper vestibulum.',
+      title: 'You and your motivation dont have a long-term relationship.',
+      description: 'And bad behaviors die hard. Fortunately, we give you great, science-backed techniques to use.',
     },
     {
-      title: 'Step 4',
-      description: 'Sed vitae orci lacinia, vehicula lorem nec, vulputate nulla.',
+      title: 'Old habits are hard to break.',
+      description: 'And bad behaviors die hard. Fortunately, we give you great, science-backed techniques to use.',
     },
     {
-      title: 'Step 5',
-      description: 'Donec non orci vitae ante cursus cursus.',
+      title: 'Its not as easy as 1-2-3',
+      description: 'The journey of change may be long but our sessions are quick We get to the point and tell you what you want to know and nothing else.',
     },
   ];
 
   return (
-    <Box my="40" display="flex" alignItems="center" justifyContent="center" p={10}>
-       <Heading fontSize="3xl">Built out of frustration</Heading>
-        <Heading fontSize="6xl" mt={2} color="blue.500">
-          Meet the ahead app
+    <Box my="40">
+      <Heading fontSize="xl">Wrong with self-improvement & how we're fixing it.</Heading>
+        <Heading fontSize="4xl" mt={2} color="blue.500">
+        Self-improvement. Ugh.
         </Heading>
+    <Box m="30" display="flex" alignItems="center" justifyContent="center" p={10}>
+       
       <Box flex="1" position="relative">
         <Center>
-          <Box w="2px" h="400px" bg="gray.400" position="absolute" left="40%" top="50%" transform="translateX(-50%) translateY(-50%)" zIndex="1">
+          <Box w="2px" h="400px" bg="gray.400" position="absolute" left="50%" top="50%" transform="translateX(-50%) translateY(-50%)" zIndex="1">
             {pointsData.map((point, index) => (
               <Box
                 key={index}
@@ -67,6 +69,8 @@ const Page4 = () => {
           ))}
         </Box>
       </Box>
+    </Box>
+
     </Box>
   );
 };
