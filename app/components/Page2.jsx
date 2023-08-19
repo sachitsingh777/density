@@ -44,14 +44,14 @@ const Page2 = () => {
               🙂
             </span>
             <p>You argue with a colleague.</p>
-            <p>You get angry and defensive, instead of staying open and working towards common ground.</p>
+            <p>You get angry and defensive instead of staying open and working towards common ground.</p>
           </Box>
           <Box className="cake-card" width="300px" bg="blue.300" borderRadius="8px" padding="16px">
             <span role="img" aria-label="Smiley Face" style={{ fontSize: '48px', marginBottom: '16px', display: 'block' }}>
               🙂
             </span>
             <p>You attend a class reunion</p>
-            <p>You compare yourself with your peers achievements, instead of making your self-judgment more independent of others.</p>
+            <p>You compare yourself with your peers achievements instead of making your self-judgment more independent of others.</p>
 
           </Box>
           <Box className="cake-card" width="300px" bg="green.300" borderRadius="8px" padding="16px" transform="rotate(10deg)">
@@ -59,14 +59,14 @@ const Page2 = () => {
               🙂
             </span>
             <p>You hit a dead end in a negotiation</p>
-            <p>You get nervous, frazzled, and frustrated, instead of staying optimistic and solution-oriented.</p>
+            <p>You get nervous frazzled and frustrated instead of staying optimistic and solution-oriented.</p>
           </Box>
           <Box className="cake-card" width="300px" bg="purple.300" borderRadius="8px" padding="16px">
             <span role="img" aria-label="Smiley Face" style={{ fontSize: '48px', marginBottom: '16px', display: 'block' }}>
               🙂
             </span>
             <p>You are at a lively dinner party</p>
-            <p>You play on your phone, instead of
+            <p>You play on your phone instead of
  striking up a chat</p>
           </Box>
           <Box className="cake-card" width="300px" bg="pink.300" borderRadius="8px" padding="16px">
@@ -74,14 +74,14 @@ const Page2 = () => {
               🙂
             </span>
             <p>You argue with a colleague.</p>
-            <p>You get angry and defensive, instead of staying open and working towards common ground.</p>
+            <p>You get angry and defensive instead of staying open and working towards common ground.</p>
           </Box>
           <Box className="cake-card" width="300px" bg="purple.300" borderRadius="8px" padding="16px">
             <span role="img" aria-label="Smiley Face" style={{ fontSize: '48px', marginBottom: '16px', display: 'block' }}>
               🙂
             </span>
             <p>You argue with a colleague.</p>
-            <p>You get angry and defensive, instead of staying open and working towards common ground.</p>
+            <p>You get angry and defensive instead of staying open and working towards common ground.</p>
           </Box>
         </Flex>
       </Center>

@@ -41,9 +41,9 @@ export default function LandingPage() {
           </Text>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
             <Button rounded="full" bg="black.400" color="white" _hover={{ bg: 'black.500' }}>
-             <Image src="https://www.ahead-app.com/images/app-store.svg" />
+             <Image src="https://www.ahead-app.com/images/app-store.svg" alt="icon" />
             </Button>
-            <Button rounded="full"><Image src="https://www.ahead-app.com/images/five-stars.png" /></Button>
+            <Button rounded="full"><Image src="https://www.ahead-app.com/images/five-stars.png" alt="icon" /></Button>
           </Stack>
         </Stack>
       </Flex>
